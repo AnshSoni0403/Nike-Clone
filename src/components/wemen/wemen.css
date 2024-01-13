@@ -1,0 +1,32 @@
+#wemen {
+    padding: auto;
+  }
+  
+#wemen h2{
+    font-family: 'Times New Roman', Times, serif;
+} 
+
+.images1 {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images horizontally */
+    margin-top: 100px;
+}
+
+.one, .two, .three {
+    width: 100%; /* Set the initial width to 100% */
+    height: auto;
+    margin-bottom: 20px; /* Add some space between images */
+}
+
+@media (min-width: 768px) {
+    .images1 {
+        flex-direction: row; /* Display images in a row on larger screens */
+        justify-content: center; /* Center images horizontally */
+    }
+
+    .one, .two, .three {
+        width: 30%; /* Adjust the width for larger screens */
+        margin-left: 2%;
+    }
+}
